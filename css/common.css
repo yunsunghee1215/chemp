@@ -1,0 +1,127 @@
+/* 공통 css */
+
+.clear::after{content: ''; display: block; clear: both;}
+.hidden{font-size: 0; color: transparent;}
+
+/* header */
+
+header{
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* nav */
+
+nav{
+  width: 100%;
+  background-color: #444;
+  position: fixed; top: 0; left: 0;
+  z-index: 99;
+}
+nav > a{
+  display: block;
+  height: 58px;
+  background: url(../assets/img/logo_chemp.svg) no-repeat 16px center / auto 18px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  }
+nav > button{
+  position: absolute; top: 0; right: 8px;
+  width: 48px; height: 58px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+nav ul{display: none;}
+nav li > a{
+  display: block;
+  padding: 14px 50px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+}
+nav li:hover > a{color: #adadad;}
+nav li:hover > a.seas{color: #f68f35;}
+nav li:hover > a.anti{color: #71bf44;}
+nav li:hover > a.reb{color: #f15d50;}
+nav li:hover > a.boss{color: #00a994;}
+nav li:hover > a.kosmos{color: #094fa3;}
+nav li:hover > a.pkaso{color: #fecc4b;}
+
+
+
+
+
+
+@media (min-width: 768px){
+
+  /* header */
+
+  header{
+    display: block;
+    width: 100%;
+    padding: 25px;
+    position: fixed; top: 0; left: 0;
+    z-index: 98;
+  }
+  header h1 > a{
+      display: block;
+      height: 100px;
+      background: url(../assets/img/logo_chemp_basic.svg) no-repeat center / auto 100%;}
+
+
+  /* nav */
+
+  nav{
+      text-align: center;
+      position: fixed; top: 150px; left: 0;
+  }
+  nav > a, nav > button{display: none;}
+  nav li{
+      display: inline-block;
+      /* float: left; */
+  }
+  nav ul{display: block;}
+  nav li > a{
+      display: block;
+      padding: 20px 20px;
+      font-size: 1.6rem;
+} 
+
+
+}
+
+
+
+
+@media (min-width: 1100px){
+
+  /* header */
+
+  header{
+    padding: 30px;
+  }
+
+  header h1 > a{
+      height: 120px;
+      background: url(../assets/img/logo_chemp_basic.svg) no-repeat center / auto 100%;}
+ 
+
+  /* nav */
+
+  nav{
+      position: fixed; top: 180px; left: 0;
+  }
+
+  nav li > a{
+      display: block;
+      padding: 25px 40px;
+      font-size: 2rem;
+  }
+
+
+
+}

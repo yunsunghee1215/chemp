@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+body{font-size: 1.4rem;}
+#wrap{min-width: 320px;}
+
+
+/* header, nav - common.css에 작성 */
+
+
+/* container */
+
+#container{
+  padding: 16px;
+  margin-top: 56px;
+  position: relative;
+}
+#container .visual img{
+  margin-bottom: 16px;
+}
+#container .visual img{
+  width: 100%;
+  border-radius: 8px;
+}
+#container .content{
+  background-color: #faf5e1;
+  border-radius: 8px;
+}
+#container .content .program{
+  width: 100%; 
+  padding-bottom: 162%;
+  background: url(../assets/img/boss_program_m.svg) no-repeat center 45% / 90% auto;
+}
+#container .content .map{
+  width: 100%; 
+  padding-bottom: 107%;
+  background: url(../assets/img/home_map.svg) no-repeat center 50% / 90% auto;
+}
+
+
+
+
+@media (min-width: 768px){
+
+  /* header, nav - common.css에 작성 */
+
+
+  /* container */
+
+  #container{
+    margin-top: 206px;
+  }
+
+  #container .content{
+    width: 70%;
+    position: absolute; top: 60%; left: 50%; transform: translateX(-50%);
+  }
+
+
+
+}
+
+
+
+
+
+
+@media (min-width: 1100px){
+
+
+  /* header, nav - common.css에 작성 */
+
+
+  /* container */
+
+  #container{
+    margin-top: 250px;
+  }
+  #container .inner{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
+  #container .content .program{
+    padding-bottom: 118%;
+    background: url(../assets/img/boss_program.svg) no-repeat center 45% / 90% auto;
+  }
+
+}
